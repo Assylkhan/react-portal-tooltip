@@ -67,7 +67,6 @@ export default class Card extends Component {
       background: '#fff',
       boxShadow: '0 0 8px rgba(0,0,0,.3)',
       borderRadius: '3px',
-      transition: `${this.state.transition} .3s ease-in-out, visibility .3s ease-in-out`,
       opacity: this.state.hover || this.props.active ? 1 : 0,
       visibility: this.state.hover || this.props.active ? 'visible' : 'hidden',
       zIndex: 50,
@@ -80,8 +79,7 @@ export default class Card extends Component {
   getBaseArrowStyle() {
     return {
       position: 'absolute',
-      content: '""',
-      transition: 'all .3s ease-in-out'
+      content: '""'
     }
   }
 
